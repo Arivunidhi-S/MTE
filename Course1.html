@@ -1,0 +1,487 @@
+﻿<!--
+Author: Arivunidhi
+File : Course.aspx File for MTE
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>:: MTE | Course ::</title>
+    <link rel="shortcut icon" href="images/Slogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="MTE,MATERIALS TECHNOLOGY EDUCATION SDN BHD,Coatings Courses,Coating Fingerprint Courses,Welding Courses,Thermal Insulation Courses,Vibration Courses,A.P.I. Courses" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript">
+        function winOpen(param) {
+            var Mleft = (screen.width / 2) - (650 / 2);
+            var Mtop = (screen.height / 2) - (650 / 2);
+            window.open(param, null, 'width=650,height=550,status=yes,toolbar=no,scrollbars=yes,menubar=no,location=no,resizable=no,top=' + Mtop + ', left=' + Mleft + '');
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/table.css" type="text/css" rel="stylesheet" media="all" />
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <!-- //Custom Theme files -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".scroll").click(function (event) {
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+            });
+        });
+		
+		
+		$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+    </script>
+    <style>
+    .btn {
+  background: #f0c000;
+  background-image: -webkit-linear-gradient(top, #f0c000, #e68a00);
+  background-image: -moz-linear-gradient(top, #f0c000, #e68a00);
+  background-image: -ms-linear-gradient(top, #f0c000, #e68a00);
+  background-image: -o-linear-gradient(top, #f0c000, #e68a00);
+  background-image: linear-gradient(to bottom, #f0c000, #e68a00);
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 17px;
+  padding: 6px 10px 6px 10px;
+  border: solid #ab5e00 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e68a00;
+  background-image: -webkit-linear-gradient(top, #e68a00, #f0c000);
+  background-image: -moz-linear-gradient(top, #e68a00, #f0c000);
+  background-image: -ms-linear-gradient(top, #e68a00, #f0c000);
+  background-image: -o-linear-gradient(top, #e68a00, #f0c000);
+  background-image: linear-gradient(to bottom, #e68a00, #f0c000);
+  text-decoration: none;
+}
+    .scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:475px;
+	right:10px;
+	display:none;
+	background: url('images/up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+    </style>
+    <!-- //js -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet" />
+    <!-- //web-fonts -->
+</head>
+<body>
+    <form id="form1">
+    <!-- header -->
+    <a href="#" class="scrollToTop"></a>
+    <div class="header-w3layoutstop">
+        <div class="container">
+            <div class="hdr-w3left navbar-left">
+                <p>
+                    <span class="fa fa-mobile"></span>+03-78867066/7166
+                </p>
+            </div>
+            <div class="w3ls-bnr-icons social-w3licon navbar-right">
+                <a href="https://www.facebook.com/profile.php?id=100012574684337" class="social-button facebook" target="_blank">
+                    <i class="fa fa-facebook"></i></a><a href="#" class="social-button twitter"><i class="fa fa-twitter">
+                    </i></a><a href="#" class="social-button google"><i class="fa fa-google-plus"></i>
+                </a>
+                <!--<a href="#" class="social-button behance"><i class="fa fa-behance"></i></a> -->
+            </div>
+        </div>
+    </div>
+    <!-- navigation -->
+    <div class="top-nav w3-agiletop">
+        <div class="container">
+            <div class="navbar-header w3llogo">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a href="index.html">
+                    <img alt="" src="images/Logo.png" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="w3menu navbar-right">
+                      <ul class="nav navbar">
+                        <!-- <li><a href="index.aspx" class="active">Home</a></li>-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#welcome" class="scroll">About</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Training
+                            <b class="caret"></b></a>
+                            <ul class="dropdown-menu agile_short_dropdown">
+                            <li><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx" class="scroll" target="_blank">Registration</a></li>
+                                <li><a href="Course.html#BlackWhite" class="scroll">Coatings Courses</a></li>
+                                <li><a href="Course.html#Gray" class="scroll">Coating<br />
+                                    FingerPrint<br />
+                                    Courses</a></li>
+                                <li><a href="Course.html#Pink" class="scroll">Welding Courses</a></li>
+                                <li><a href="Course.html#Green" class="scroll">Corrosion Courses</a></li>
+                                <li><a href="Course.html#Red" class="scroll">Thermal Insulation
+                                    <br />
+                                    Courses</a></li>
+                                <li><a href="Course.html#Lavender" class="scroll">Vibration Courses</a></li>
+                                <li><a href="Course.html#Brown" class="scroll">Other Courses</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="Event.html" class="scroll">Events</a></li>--> <li><a href="Uset.html" class="scroll">USET</a></li>
+                        <li><a href="Gallery.html" class="scroll">Gallery</a></li>
+                        <!--<li><a href="gallery.html">Gallery</a></li>-->
+                        <li><a href="#footer" class="scroll">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //navigation -->
+    <!-- //header -->
+    <!-- banner -->
+    <div class="w3ls-banner-1">
+    </div>
+    <!-- //banner -->
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="w3layouts_breadcrumbs_left">
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="Index.html">Home</a><span>/</span></li>
+                    <li><i class="fa fa-info-circle" aria-hidden="true"></i>Training</li>
+                </ul>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+    <!-- //breadcrumbs -->
+    <!-- icons -->
+    <div class="w3_wthree_agileits_icons main-grid-border">
+        <div class="container">
+            <div class="icons">
+                <h3 class="agileits-icons-title">
+                    COURSES/TRAINING OFFERED BY MTESB</h3>
+                <section id="new">
+								  
+
+								<div class="row fontawesome-icon-list">
+									
+								<!--<a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx" class="btn" target="_blank" style="color:#000"><strong>Click to Register Here</strong></a>	-->
+							
+									
+									
+									<table class="BlackWhite" id="BlackWhite">
+  <thead>
+<tr>
+<th align="left">COATINGS COURSES</th>
+<th style="text-align: center;">Duration (Days)</th>
+<th style="text-align: center;">Register</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td  style="width:60%"><a href="javascript:;" onclick="winOpen('Course/PCTT.htm');">Blasting & Painting Training Course</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a>	</td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/PCTA.htm');">Protective Coatings Technician Certification Scheme</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/BPS.htm');">Blasting & Painting Supervisor</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CQCT.htm');">Coating Quality Control Technician</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CCPP.htm');">Corrosion Control by Protective Paint</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CIL2.htm');">Coatings Inspection Certification Scheme Level 1</a></td><td align="center">4</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CIL2.htm');">Coatings Inspection Certification Scheme Level 2</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+
+</tbody>
+
+</table>
+
+                        <!--Gray Color Table-->
+
+									<table class="Gray" id="Gray">
+<thead>
+<tr>
+<th align="left">COATING FINGERPRINT COURSES</th>
+<th style="text-align: center;">Duration (Days)</th>
+<th style="text-align: center;">Register</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td  style="width:60%"><a href="javascript:;" onclick="winOpen('Course/CFF.htm');">Coating Fingerprint Foundation</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CFQC.htm');">Coating Fingerprint Quality Controller</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+
+
+</tbody>
+
+</table>	
+
+                        <!--Pink Color Table-->
+
+									<table class="Pink" id="Pink">
+<thead>
+<tr>
+<th align="left">WELDING COURSES</th>
+<th style="text-align: center;">Duration (Days)</th>
+<th style="text-align: center;">Register</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td  style="width:60%"><a href="javascript:;" onclick="winOpen('Course/CWI.htm');">Certified Welding Inspector</a></td><td align="center">6</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/AWE.htm');">Associate Welding Engineer (JWES)</a></td><td align="center">7</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/WE.htm');">Welding Engineer (JWES)</a></td><td align="center">7</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/SWE.htm');">Senior Welding Engineer (JWES)</a></td><td align="center">7</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/RWPE.htm');">Repair Welding of Pressure Equipment in Refineries and Chemical Plants</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/WJT.htm');">Welding and Joining Technology for Non Welding</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/STNT.htm');">Steel Technology for Non Technical Person</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="#">Welding Metallurgy of Steels</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="#">Metallurgy for Engineers/Managers</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="#">Calculation of Strength of Welded Projects</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="#">Cost & Estimation of Welding Projects</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="#">Interpretation of Weld Quality by Welding Codes</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="#">Interpretation of Weld Quality by Radiographic Method</a></td><td align="center">1</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+</tbody>
+
+</table>	
+
+ <!--Green Color Table-->
+
+									<table class="Green" id="Green">
+<thead>
+<tr>
+<th align="left">CORROSION COURSES</th>
+<th style="text-align: center;">Duration (Days)</th>
+<th style="text-align: center;">Register</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td  style="width:60%"><a href="javascript:;" onclick="winOpen('Course/CCCP.htm');">Corrosion Control By Cathodic Protection</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CCT1-2.htm');">Corrosion Technician Level 1</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CCT1-2.htm');">Corrosion Technician Level 2</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CPT.htm');">Cathodic Protection Technician</a></td><td align="center">4</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/CPE.htm');">Cathodic Protection Engineer</a></td><td align="center">4</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+
+
+</tbody>
+
+</table>	
+
+<!--Red Color Table-->
+
+									<table class="Red" id="Red">
+<thead>
+<tr>
+<th align="left">THERMAL INSULATION COURSES</th>
+<th style="text-align: center;">Duration (Days)</th>
+<th style="text-align: center;">Register</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td  style="width:60%"><a href="javascript:;" onclick="winOpen('Course/ITI.htm');">Introduction to Thermal Insulation</a></td><td align="center">2</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/TII.htm');">Thermal Insulation Installer Certification Scheme</a></td><td align="center">6</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+</tbody>
+
+</table>	
+
+<!--Lavender Color Table-->
+
+									<table class="Lavender" id="Lavender">
+<thead>
+<tr>
+<th align="left">VIBRATION COURSES</th>
+<th style="text-align: center;">Duration (Days)</th>
+<th style="text-align: center;">Register</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td  style="width:60%"><a href="javascript:;" onclick="winOpen('Course/VP1.htm');">Vibration Practitioner Level 1</a></td><td align="center">4</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/VP2.htm');">Vibration Practitioner Level 2</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/VP3.htm');">Vibration Specialist Level 3</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/VP4.htm');">Vibration Specialist Level 4</a></td><td align="center">8</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+
+
+</tbody>
+
+</table>	
+
+<!--Brown Color Table-->
+
+									<table class="Brown" id="Brown">
+<thead>
+<tr>
+<th align="left">OTHER COURSES (Upon request)</th>
+<th style="text-align: center;">Duration (Days)</th>
+<th style="text-align: center;">Register</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td  style="width:60%"><a href="javascript:;" onclick="#">Welding SMAW, GMAW, GTAW (1G - 6G)</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/API570.htm');">API-570 Piping Inspector</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/API510.htm');">API-510 Pressure Vessel Inspector</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+<tr>
+<td><a href="javascript:;" onclick="winOpen('Course/API653.htm');">API-653 Above Storage Tank Inspector</a></td><td align="center">5</td><td align="center"><a href="http://www.serbaitproducts.com/mte_register/MTE_Form.aspx"  target="_blank" style="color:#009BFF"><strong>Click to Register Here</strong></a></td></tr>
+
+
+</tbody>
+
+</table>	
+									
+								  </div>
+
+								</section>
+            </div>
+        </div>
+    </div>
+    <!-- //icons -->
+    <!-- //footer -->
+  <div class="footer" id="footer">
+        <div class="container">
+            <div class="col-md-5 col-sm-5 agileinfo_footer_grid">
+                <h3 class="agileits-title">
+                    About Us</h3>
+                <p>
+                    <span>MATERIALS TECHNOLOGY EDUCATION SDN BHD (MTE) started its journey into the educational
+                        world on July 2, 2004, to reach its ultimate destination - to be a 100 percent skills-based
+                        university in Malaysia. MTE is a product of a joint venture between Inter Merger
+                        Group (IMG) & IMM Resources Sdn Bhd. Institute of Materials Malaysia (IMM) wholly
+                        owns the latter.</span></p>
+            </div>
+            <div class="col-md-3 col-sm-3 agileinfo_footer_grid mid-w3l nav2">
+                <h3 class="agileits-title">
+                    Courses</h3>
+                <ul>
+                    <li><a href="Course.html#BlackWhite"><i class="fa fa-arrow-right"></i>Coatings Courses</a></li>
+                    <li><a href="Course.html#Gray"><i class="fa fa-arrow-right"></i>Coating FingerPrint
+                        Courses</a></li>
+                    <li><a href="Course.html#Pink"><i class="fa fa-arrow-right"></i>Welding Courses</a></li>
+                    <li><a href="Course.html#Green"><i class="fa fa-arrow-right"></i>Corrosion Courses</a></li>
+                    <li><a href="Course.html#Red"><i class="fa fa-arrow-right"></i>Thermal Insulation</a></li>
+                    <li><a href="Course.html#Lavender"><i class="fa fa-arrow-right"></i>Vibration Courses</a></li>
+                    <li><a href="Course.html#Brown"><i class="fa fa-arrow-right"></i>Other Courses</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 agileinfo_footer_grid">
+                <h3 class="agileits-title">
+                    Contact us</h3>
+                <ul>
+                    <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Unit 3A09, Block A Kelana Centre Point, 
+<br />No. 3, Jalan SS 7/19, 47301 Petaling Jaya,<br />
+Selangor Darul Ehsan.
+</li>
+                    <!--<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>-->
+                    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Tel : +603-7886 7066 / 7166</li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : info@mte.com.my<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ikmal@mte.com.my<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;azlizul@mte.com.my<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amirah@mte.com.my</li>
+                </ul>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div class="w3agile_footer_copy">
+                  <p>
+                    © 2019 MTE. All rights reserved | Design by <a href="http://e-serbadk.com/" target="_blank">
+                        Serba Dinamik IT Solutions sdn bhd.</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- FlexSlider -->
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!-- End-slider-script -->
+    </form>
+</body>
+</html>

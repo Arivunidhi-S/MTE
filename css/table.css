@@ -1,0 +1,390 @@
+/*--
+Author: Arivunidhi
+File : Table.css File for MTE
+--*/
+ .BlackWhite  a
+{
+    color:Black;
+    }
+	
+	.Gray  a
+	{
+    color:Black;
+    }
+	
+	 .Aqua  a
+{
+    color:Black;
+    }
+	
+	.Pink  a
+	{
+    color:Black;
+    }
+	
+	
+	 .Green  a
+{
+    color:Black;
+    }
+	
+	.Red  a
+	{
+    color:Black;
+    }
+	
+	 .Blue  a
+{
+    color:Black;
+    }
+	
+	.Orange  a
+	{
+    color:Black;
+    }
+
+	 .Brown  a
+{
+    color:Black;
+    }
+	
+	.Lavender a
+	{
+    color:Black;
+    }
+
+table.BlackWhite 
+{
+    margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.BlackWhite td, table.BlackWhite th {
+  border: 1px solid #000000; 
+  padding: 3px 2px;
+}
+table.BlackWhite tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.BlackWhite tr:nth-child(even) {
+  background: #FFE5CC;
+}
+table.BlackWhite thead {
+  background: #FF9947;
+  border-bottom: 1px solid #444444;
+}
+table.BlackWhite thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+ 
+  border-left: 1px solid #000000;
+}
+table.BlackWhite thead th:first-child {
+  border-left: none;
+}
+
+table.BlackWhite tfoot td {
+  font-size: 21px;
+}
+
+
+/* Gray */
+
+table.Gray 
+{
+     margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.Gray td, table.Gray th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+}
+table.Gray tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.Gray tr:nth-child(even) {
+  background: #F2F2F2;
+}
+table.Gray thead {
+  background: #D0DDE0;
+  border-bottom: 1px solid #444444;
+}
+table.Gray thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  
+  border-left: 1px solid #000000;
+}
+table.Gray thead th:first-child {
+  border-left: none;
+}
+
+table.Gray tfoot td {
+  font-size: 21px;
+}
+
+/* Pink */
+
+table.Pink 
+{
+     margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.Pink td, table.Pink th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+}
+table.Pink tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.Pink tr:nth-child(even) {
+  background: #F1E6F2;
+}
+table.Pink thead {
+  background: #E0A6DB;
+  border-bottom: 1px solid #444444;
+}
+table.Pink thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+
+  border-left: 1px solid #000000;
+}
+table.Pink thead th:first-child {
+  border-left: none;
+}
+
+table.Pink tfoot td {
+  font-size: 21px;
+}
+
+/* Aqua */
+
+
+table.Aqua 
+{
+      margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.Aqua td, table.Aqua th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+}
+table.Aqua tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.Aqua tr:nth-child(even) {
+  background: #BFEFF2;
+}
+table.Aqua thead {
+  background: #34D2E0;
+  border-bottom: 1px solid #444444;
+}
+table.Aqua thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  
+  border-left: 1px solid #000000;
+}
+table.Aqua thead th:first-child {
+  border-left: none;
+}
+
+table.Aqua tfoot td {
+  font-size: 21px;
+}
+
+/* Green */
+
+table.Green 
+{
+      margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.Green td, table.Green th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+}
+table.Green tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.Green tr:nth-child(even) {
+  background: #D3F2DC;
+}
+table.Green thead {
+  background: #67E06D;
+  border-bottom: 1px solid #444444;
+}
+table.Green thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+ 
+  border-left: 1px solid #000000;
+}
+table.Green thead th:first-child {
+  border-left: none;
+}
+
+table.Green tfoot td {
+  font-size: 21px;
+}
+
+/* Red */
+
+table.Red 
+{
+     margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.Red td, table.Red th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+}
+table.Red tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.Red tr:nth-child(even) {
+  background: #F2D3D0;
+}
+table.Red thead {
+  background: #E04E4E;
+  border-bottom: 1px solid #444444;
+}
+table.Red thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+ 
+  border-left: 1px solid #000000;
+}
+table.Red thead th:first-child {
+  border-left: none;
+}
+
+table.Red tfoot td {
+  font-size: 21px;
+}
+
+/* Lavender */
+
+table.Lavender 
+{
+     margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.Lavender td, table.Lavender th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+}
+table.Lavender tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.Lavender tr:nth-child(even) {
+  background: #C7C4F2;
+}
+table.Lavender thead {
+  background: #8672E0;
+  border-bottom: 1px solid #444444;
+}
+table.Lavender thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  
+  border-left: 1px solid #000000;
+}
+table.Lavender thead th:first-child {
+  border-left: none;
+}
+
+table.Lavender tfoot td {
+  font-size: 21px;
+}
+
+/* Brown */
+
+table.Brown 
+{
+         margin-top:2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000000;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.Brown td, table.Brown th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+}
+table.Brown tbody td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.Brown tr:nth-child(even) {
+  background: #F2E6E6;
+}
+table.Brown thead {
+  background: #C26567;
+  border-bottom: 1px solid #444444;
+}
+table.Brown thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  
+  border-left: 1px solid #000000;
+}
+table.Brown thead th:first-child {
+  border-left: none;
+}
+
+table.Brown tfoot td {
+  font-size: 21px;
+}
